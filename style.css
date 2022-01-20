@@ -177,3 +177,36 @@ select {
   padding: 0 var(--padding);
   border-top: var(--border);
 }
+
+
+
+/*
+NAVIGATION STYLES
+*/
+
+.dpc-nav {
+  font-family: Sans;
+}
+.dpc-nav ul {
+  display: flex;
+  align-items: center;
+}
+
+.dpc-nav * {
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+.dpc-nav li a:hover {
+   background-color: #FAC05E;
+ 
+
+  border: 25px #FAC05E;
+}
+
+ /* .dpc-nav li+li {
+  margin-left: 20px;
+}  */
+
