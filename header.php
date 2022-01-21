@@ -15,7 +15,7 @@
 
 <body>
   <div class="header-container">
-    <div id="logo"> Detroit Parks Coalition </div>
+    <div id="logo"> DETROIT PARKS COALITION </div>
     <!-- Navigation -->
 
     <nav class="dpc-nav">
