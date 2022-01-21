@@ -15,9 +15,7 @@
 
 <body>
   <div class="header-container">
-    <!-- Logo -->
-    <img id="logo" src="<?php echo get_template_directory_uri(); ?>/images/black-void.png" />
-
+    <div id="logo"> Detroit Parks Coalition </div>
     <!-- Navigation -->
     <?php
     $args = array(
