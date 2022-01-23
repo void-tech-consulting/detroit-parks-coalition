@@ -15,18 +15,22 @@
 
 <body>
   <div class="header-container">
-    <!-- Logo -->
-    <img id="logo" src="<?php echo get_template_directory_uri(); ?>/images/black-void.png" />
-
+    <div id="logo"> DETROIT PARKS COALITION </div>
     <!-- Navigation -->
-    <?php
-    $args = array(
-      "theme_location" => "primary",
-      "menu" => "Navigation",         // Same name as menu we registered in register-settings.php
-      "menu_class" => "nav"
-    );
-    wp_nav_menu($args);
-    ?>
+
+    <nav class="dpc-nav">
+        <?php
+        $args = array(
+          "theme_location" => "primary",
+          "menu" => "Navigation",         // Same name as menu we registered in register-settings.php
+          "menu_class" => "nav"
+        );
+        wp_nav_menu($args);
+        ?>
+
+     
+    </nav>
+
   </div>
 
   <!-- body tag is closed in ./footer.php -->
