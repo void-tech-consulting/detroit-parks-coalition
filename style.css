@@ -211,10 +211,8 @@ NAVIGATION STYLES
 }
 
 .dpc-nav li a:hover {
-   background-color: #FAC05E;
- 
-
-  border: 25px #FAC05E;
+  background-color: #FAC05E;
+  border-radius: 4px;
 }
 
  /* .dpc-nav li+li {
