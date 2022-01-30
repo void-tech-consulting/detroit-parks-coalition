@@ -27,10 +27,7 @@
         );
         wp_nav_menu($args);
         ?>
-
-     
     </nav>
-
   </div>
 
   <!-- body tag is closed in ./footer.php -->

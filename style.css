@@ -221,4 +221,12 @@ NAVIGATION STYLES
   margin-left: 20px;
 }  */
 
+.background {
+  background-color: #FFFCF5;
+}
+
+.image_box {
+  border-radius: 20px;
+  
+}
 

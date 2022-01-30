@@ -1,7 +1,9 @@
 <?php get_header(); ?>
 
-<div id="page-content">
-  HOME
+<div class="image_box">
+  <div >
+  
+  <div>
 </div>
 
 <?php get_footer(); ?>
