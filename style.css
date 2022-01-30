@@ -210,3 +210,94 @@ NAVIGATION STYLES
   margin-left: 20px;
 }  */
 
+
+/*About Us Styles 
+*/
+.section {
+  background: #E5E5E5;
+}
+.About {
+  text-align:center;
+}
+
+.missions{
+  padding: 2rem; 
+  text-align:center;
+  font-size: 1.4rem;
+line-height: 28px;
+}
+.Who h1{
+  font-size: 4.5rem;
+  margin-top: 5rem;
+  color: #93C0A4;
+  font-style: normal;
+  font-weight: normal;
+
+}
+
+.Who p{
+  font-weight: 600;
+  line-height: 23px;
+  font-size: 1.4rem;
+  margin-top: 1rem;
+  color: #EB9B14;
+}
+.center {
+    margin-top: 3rem;
+    border-radius: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 22.125rem;
+    width: 83.9375rem; 
+   
+}
+.Containers {
+  box-sizing: border-box;
+  /* justify-content: space-between; */
+  justify-content:center;
+  display: flex;
+  flex-direction: row;
+}
+
+#box1 {
+  padding:5rem;
+  width: 24.5rem;
+  height: 24rem;
+  margin: 5rem;
+  height: 24rem;
+  line-height: 30px;
+  border: solid 1px #088E16;
+}
+
+#box2 {
+  padding:5rem;
+  width: 24.5rem;
+  height: 24rem;
+  margin: 5rem;
+  height: 24rem;
+  line-height: 30px;
+  border: solid 1px #088E16;
+}
+
+#box3 {
+  padding:5rem;
+  width: 24.5rem;
+  height: 24rem;
+  margin: 5rem;
+  height: 24rem;
+  line-height: 30px;
+  border: solid 1px #088E16;
+}
+.Goals {
+  padding: 4rem;
+  background:#DBEFE3;
+}
+
+.Goals h1{
+  margin:auto;
+  font-size: 3rem;
+
+  color: #93C0A4;
+  text-align: center;
+}
