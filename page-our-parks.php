@@ -4,8 +4,6 @@ require get_template_directory() . '/inc/section_vars.php';
 ?>
 
 <div class="background">
-<div style="width: 100px; height: 100px; background: red;"> hello parks </div>
-
    <div>
    <?php 
    require 'inc/section_vars.php';
@@ -14,21 +12,17 @@ require get_template_directory() . '/inc/section_vars.php';
             foreach ( $parks_tiles_data as $k => $f ) {
                 $park_img = '';
                 if ($f['park_img']) {
-                    $project_img = '<img src="'.esc_url(get_media_url( $f['park_img'])).'">';
+                    $park_img = '<img src="'.esc_url(get_media_url( $f['park_img'])).'">';
                 } 
                 ?>
-                <div style="background: red;">
+                <div>
                     <p>
                         <?php echo $f['park_name'] ?>
-                        
                     </p>
-
                 </div>
             <?php } ?>
         <?php } ?>
-        
    </div>
-
 </div>
 
 <?php get_footer(); ?>
