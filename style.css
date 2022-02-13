@@ -5,8 +5,7 @@ Description: Basic WordPress theme boilerplate
 Version: 1.0
 */
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
 /*************************************
   Start reset 
 **************************************/
@@ -224,7 +223,7 @@ NAVIGATION STYLES
   font-size: 1.4rem;
 line-height: 28px;
 }
-.Who h1{
+.whoMessage h1{
   font-size: 4.5rem;
   margin-top: 5rem;
   color: #93C0A4;
@@ -233,14 +232,15 @@ line-height: 28px;
 
 }
 
-.Who p{
+.whoMessage p{
   font-weight: 600;
   line-height: 23px;
   font-size: 1.4rem;
   margin-top: 1rem;
   color: #EB9B14;
 }
-.center {
+.mainImage {
+    align-self: center;
     margin-top: 3rem;
     border-radius: 20px;
     display: block;
@@ -248,9 +248,10 @@ line-height: 28px;
     margin-right: auto;
     height: 22.125rem;
     width: 83.9375rem; 
+    object-fit: cover;
    
 }
-.Containers {
+.containers {
   box-sizing: border-box;
   /* justify-content: space-between; */
   justify-content:center;
@@ -258,44 +259,83 @@ line-height: 28px;
   flex-direction: row;
 }
 
-#box1 {
+.goalsLeftBox {
   padding:5rem;
   width: 24.5rem;
   height: 24rem;
   margin: 5rem;
-  height: 24rem;
-  line-height: 30px;
   border: solid 1px #088E16;
 }
 
-#box2 {
+.goalsLeftBox img{
+    position:relative;
+    bottom:3rem;
+    left:5.9rem;
+}
+
+.goalsMiddleBox {
   padding:5rem;
   width: 24.5rem;
   height: 24rem;
   margin: 5rem;
-  height: 24rem;
-  line-height: 30px;
   border: solid 1px #088E16;
 }
 
-#box3 {
+
+.goalsLeftBoxText {
+  font-weight:500;
+  text-align:center;
+  font-size:1.3rem;
+  margin:auto;
+  padding:0%;
+}
+
+
+.goalsRightBoxText {
+  font-weight:500;
+  text-align:center;
+  font-size:1.3rem;
+  margin:auto;
+  padding:0%;
+}
+
+.goalsMiddleBoxText {
+  font-weight:500;
+  text-align:center;
+  font-size:1.3rem;
+  margin:auto;
+  padding:0%;
+}
+
+.goalsMiddleBox img{
+  position:relative;
+  bottom:3rem;
+  left:5.9rem;
+}
+
+.goalsRightBox {
   padding:5rem;
   width: 24.5rem;
   height: 24rem;
   margin: 5rem;
-  height: 24rem;
-  line-height: 30px;
   border: solid 1px #088E16;
+  
 }
-.Goals {
+
+.goalsRightBox img {
+  position:relative;
+  bottom:3rem;
+  left:5.9rem;
+}
+.goals {
   padding: 4rem;
   background:#DBEFE3;
+  font-family: 'Work Sans';
+  font-weight: 400;
 }
-
-.Goals h1{
+.goals h1{
   margin:auto;
   font-size: 3rem;
-
   color: #93C0A4;
   text-align: center;
 }
