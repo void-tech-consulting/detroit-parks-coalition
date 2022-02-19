@@ -145,6 +145,22 @@ if (!function_exists('get_parks_tiles_data')) {
 	}
 }
 
+if (!function_exists('get_get_involved_tiles_data')) {
+	/**
+	 * Get's get_involved_tiles_data
+	 *
+	 * @since 1.1.4
+	 * @return array
+	 */
+	function get_get_involved_tiles_data($section) {
+		return template_data($section, array(
+			'park_name' => '',
+			'park_link' => '',
+			'park_img'  => ''
+		));
+	}
+}
+
 // Get url to media for repeater sections
 if (!function_exists('get_media_url')) {
 	function get_media_url($media = array(), $size = 'full')

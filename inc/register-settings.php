@@ -22,7 +22,7 @@ function parks_tiles_repeater($wp_customize) {
                 'label' => esc_html__('Parks Tiles Repeater'),
                 'description' => 'add or remove parks tile from homepage',
                 'section' => $parks_tiles_section,
-                'live_title_id' => 'project_title',
+                'live_title_id' => 'park_name',
                 'title_format' => esc_html__('[live_title]'),
                 'max_item' => 20,
                 'limited_msg' => wp_kses_post('Max of 20 parks met'),
@@ -46,3 +46,76 @@ function parks_tiles_repeater($wp_customize) {
 
 }
 add_action('customize_register', 'parks_tiles_repeater');
+
+function get_involved_tile_customizer($wp_customize) {
+    $wp_customize->add_section('get_involved', array(
+        'title' => 'Get Involved Images',
+    ));
+
+    $wp_customize->add_setting('get_involved_tile_1', array(
+        'sanitize_callback' => 'onepress_sanitize_repeatable_data_field',
+        'transport' => 'refresh',
+    ));
+    $wp_customize->add_control( new WP_Customize_Image_Control(
+        $wp_customize,
+        'get_involved_tile_1',
+        array (
+            'label' => 'Image 1',
+            'section' => 'get_involved',
+        )
+    ));
+
+    $wp_customize->add_setting('get_involved_tile_2', array(
+      'sanitize_callback' => 'onepress_sanitize_repeatable_data_field',
+      'transport' => 'refresh',
+  ));
+  $wp_customize->add_control( new WP_Customize_Image_Control(
+      $wp_customize,
+      'get_involved_tile_2',
+      array (
+          'label' => 'Image 2',
+          'section' => 'get_involved',
+      )
+  ));
+
+  $wp_customize->add_setting('get_involved_tile_3', array(
+    'sanitize_callback' => 'onepress_sanitize_repeatable_data_field',
+    'transport' => 'refresh',
+  ));
+  $wp_customize->add_control( new WP_Customize_Image_Control(
+      $wp_customize,
+      'get_involved_tile_3',
+      array (
+          'label' => 'Image 3',
+          'section' => 'get_involved',
+      )
+  ));
+
+  $wp_customize->add_setting('get_involved_tile_4', array(
+    'sanitize_callback' => 'onepress_sanitize_repeatable_data_field',
+    'transport' => 'refresh',
+  ));
+  $wp_customize->add_control( new WP_Customize_Image_Control(
+      $wp_customize,
+      'get_involved_tile_4',
+      array (
+          'label' => 'Image 4',
+          'section' => 'get_involved',
+      )
+  ));
+
+  $wp_customize->add_setting('get_involved_tile_5', array(
+    'sanitize_callback' => 'onepress_sanitize_repeatable_data_field',
+    'transport' => 'refresh',
+  ));
+  $wp_customize->add_control( new WP_Customize_Image_Control(
+      $wp_customize,
+      'get_involved_tile_5',
+      array (
+          'label' => 'Image 5',
+          'section' => 'get_involved',
+      )
+  ));
+
+}
+add_action('customize_register', "get_involved_tile_customizer");

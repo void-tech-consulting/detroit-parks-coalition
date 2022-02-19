@@ -21,13 +21,6 @@ Version: 1.0
 
 /* Box sizing rules */
 
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-  font-family: 'Montserrat', sans-serif;
-}
-
 /* Remove default padding */
 
 ul[class],
@@ -225,8 +218,50 @@ NAVIGATION STYLES
   background-color: #FFFCF5;
 }
 
-.image_tile {
+.image-tile {
   border-radius: 20px;
-  
+  width: 582px;
+  height: 682px;
+  border-width: 200px;
 }
 
+#park-name-tile {
+  color: #088E16;
+  font-family: 'magilio';
+  font-weight: 400;
+  font-size: 64px; /* change this to dynamic size*/
+}
+
+#get-involved-large-font {
+  color: #088E16;
+  font-family: 'magilio';
+  font-weight: 400;
+  font-size: 96px;
+}
+
+#get-involved-small-font {
+  color: #088E16;
+  font-family: 'work sans';
+  font-weight: 400;
+  font-size: 24px;
+}
+
+#get-involved-med-font {
+  color: #088E16;
+  font-family: 'work sans';
+  font-weight: 400;
+  font-size: 30px;
+}
+
+.repeat-horizontal {
+  display: flex;
+  flex-direction: row;
+  border-radius: 20px;
+  width: 582px;
+  height: 682px;
+  border-width: 200px;
+}
+
+.get-involved-tiles {
+  display: inline;
+}
