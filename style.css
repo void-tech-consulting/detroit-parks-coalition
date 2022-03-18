@@ -218,50 +218,56 @@ NAVIGATION STYLES
   background-color: #FFFCF5;
 }
 
+h1 {
+  color: #088E16;
+  font-family: 'magilio';
+  font-weight: 400;
+  font-size: 4rem;
+}
+
+h2 {
+  color: #088E16;
+  font-family: 'magilio';
+  font-weight: 400;
+  font-size: 3rem;
+}
+
+h3 {
+  color: #088E16;
+  font-family: 'work sans';
+  font-weight: 400;
+  font-size: 1.3rem;
+}
+
 .image-tile {
   border-radius: 20px;
-  width: 582px;
-  height: 682px;
-  border-width: 200px;
+  width: 20rem;
+  height: 25rem;
+  border-width: 12.5rem;
 }
 
-#park-name-tile {
-  color: #088E16;
-  font-family: 'magilio';
-  font-weight: 400;
-  font-size: 64px; /* change this to dynamic size*/
-}
-
-#get-involved-large-font {
-  color: #088E16;
-  font-family: 'magilio';
-  font-weight: 400;
-  font-size: 96px;
-}
-
-#get-involved-small-font {
-  color: #088E16;
-  font-family: 'work sans';
-  font-weight: 400;
-  font-size: 24px;
-}
-
-#get-involved-med-font {
-  color: #088E16;
-  font-family: 'work sans';
-  font-weight: 400;
-  font-size: 30px;
-}
-
-.repeat-horizontal {
+.image-styling {
   display: flex;
   flex-direction: row;
-  border-radius: 20px;
-  width: 582px;
-  height: 682px;
-  border-width: 200px;
+  border-radius: 1.25rem;
+  width: 36.375rem;
+  height: 43.75rem;
+  border-width: 12.5;
 }
 
-.get-involved-tiles {
-  display: inline;
+.our-parks-container {
+  display: grid;
+  grid-template-columns: 5;
+  grid-template-rows: 2;
+}
+
+.get-involved-container {
+  display: grid;
+  grid-template-columns: ;
+  grid-template-rows: ;
+}
+
+.item {
+  grid-column: 1;
+  grid-row: 1;
 }
