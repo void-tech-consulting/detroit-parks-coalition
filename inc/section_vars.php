@@ -22,4 +22,6 @@ $company_link_twitter = 'company_link_twitter';
 $company_link_twitter_control = 'company_link_twitter_control';
 $company_link_youtube = 'company_link_youtube';
 $company_link_youtube_control = 'company_link_youtube_control';
-
+$contact_form_shortcode = 'contact_form_shortcode';
+$contact_section = 'contact_section';
+$shortcode = '[forminator_form id="56"]';

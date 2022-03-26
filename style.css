@@ -57,6 +57,8 @@ body {
   color: var(--text-primary);
   display: flex;
   flex-direction: column;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 /* Remove list styles on ul, ol elements with a class attribute */
@@ -95,12 +97,13 @@ select {
 **************************************/
 
 :root {
-  --background-main: rgb(255, 255, 255);
+  --background-main: #fffcf5;
   --text-primary: rgb(0, 0, 0);
   --text-secondary: rgb(41, 41, 41);
   --padding: 16px;
   --border: thin solid rgba(255, 255, 255, .15);
   --shadow: 0 8px 40px 0 rgba(0,0,0, .15);
+  --text-color: #2d5f32;
 }
 
 /*************************************
@@ -136,7 +139,7 @@ select {
 }
 
 #logo {
-  color: #088E16;
+  color: var(--text-color);
   font-family: 'magilio';
   font-weight: 400;
   font-size: 55px; /* change this to dynamic size*/
@@ -214,50 +217,81 @@ NAVIGATION STYLES
   margin-left: 20px;
 }  */
 
-.background {
-  background-color: #FFFCF5;
+.page-styling{
+  background-color: var(--background-main);
+  margin-top: 3rem;
+  margin-left: 3rem;
+  margin-right: 3rem;
+  margin-bottom: 3rem;
 }
 
 h1 {
-  color: #088E16;
+  color: var(--text-color);
   font-family: 'magilio';
   font-weight: 400;
   font-size: 4rem;
 }
 
 h2 {
-  color: #088E16;
+  color: var(--text-color);
   font-family: 'magilio';
   font-weight: 400;
   font-size: 3rem;
+  text-align: center;
+  padding: 5px;
 }
 
 h3 {
-  color: #088E16;
+  color: var(--text-color);
+  font-family: 'magilio';
+  font-weight: 400;
+  font-size: 2.5rem;
+  padding: 5px;
+  text-align: center;
+}
+
+h4 {
+  color: var(--text-color);
   font-family: 'work sans';
   font-weight: 400;
   font-size: 1.3rem;
+  padding: 5px;
 }
 
-.image-styling {
+.our-parks-image-styling {
   display: flex;
   flex-direction: row;
-  width: 22rem;
-  height: 22rem;
+  width: 100%;
+  height: 380px;
   object-fit: cover;
+  border-radius: 8px;
+  box-shadow: var(--shadow);
+  padding: 2px;
+}
+
+.get-involved-image-styling {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 380px;
+  width: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: var(--shadow);
+  padding: 2px;
 }
 
 .our-parks-photos-container {
-  margin-top: 3rem;
-  margin-left: 3rem;
   display: grid;
-  gap: 10rem;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 8rem;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
 }
 
-/*.get-involved-container {
+.get-involved-container {
+  margin-top: 1.5rem;
   display: grid;
-  grid-template-columns: ;
-  grid-template-rows: ;
-}*/
+  gap: 15px;
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  margin-bottom: 3rem;
+}
 

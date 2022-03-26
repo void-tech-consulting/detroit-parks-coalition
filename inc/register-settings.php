@@ -158,3 +158,30 @@ function company_information_customizer($wp_customize)
   )));
 }
 add_action('customize_register', 'company_information_customizer');
+
+//put this shortcode into the customizer
+//[forminator_form id="56"]
+
+function contact_customizer($wp_customize) {
+  require 'section_vars.php';
+  require_once 'controller.php';
+
+  $wp_customize->add_section($contact_section, array(
+    'title' => 'Contact Us Customizer',
+  ));
+  $wp_customize->add_setting($contact_section, array(
+    'sanitize_callback' => 'onepress_sanitize_repeatable_data_field',
+    'transport' => 'refresh',
+  ));
+
+  // Shortcode for form
+  $wp_customize->add_setting($contact_form_shortcode, array(
+    'default' => '[enter shortcode here]'
+  ));
+  $wp_customize->add_control($contact_form_shortcode, array(
+    'label' => 'Contact form shortcode',
+    'section' => $contact_section,
+    'type' => 'textarea'
+  ));
+}
+add_action('customize_register', 'contact_customizer');
