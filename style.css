@@ -239,35 +239,25 @@ h3 {
   font-size: 1.3rem;
 }
 
-.image-tile {
-  border-radius: 20px;
-  width: 20rem;
-  height: 25rem;
-  border-width: 12.5rem;
-}
-
 .image-styling {
   display: flex;
   flex-direction: row;
-  border-radius: 1.25rem;
-  width: 36.375rem;
-  height: 43.75rem;
-  border-width: 12.5;
+  width: 22rem;
+  height: 22rem;
+  object-fit: cover;
 }
 
-.our-parks-container {
+.our-parks-photos-container {
+  margin-top: 3rem;
+  margin-left: 3rem;
   display: grid;
-  grid-template-columns: 5;
-  grid-template-rows: 2;
+  gap: 10rem;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 }
 
-.get-involved-container {
+/*.get-involved-container {
   display: grid;
   grid-template-columns: ;
   grid-template-rows: ;
-}
+}*/
 
-.item {
-  grid-column: 1;
-  grid-row: 1;
-}

@@ -14,21 +14,19 @@
         $get_involved_tiles_data = get_get_involved_tiles_data($get_involved_tiles_setting);
         if (!empty($get_involved_tiles_data)) {
             foreach ( $get_involved_tiles_data as $k => $f ) { ?>
-                <div class="item">
-                    <div> 
-                        <h2>
-                        <?php echo $f['park_name'] ?>
-                        </h2>
-                    </div>
-                    <div class="image-styling">
-                        <?php
-                        $park_img = '';
-                        if ($f['park_img']) {
-                            $park_img = '<img src="'.esc_url(get_media_url( $f['park_img'])).'">';
-                            echo $park_img;
-                        } 
-                        ?>
-                    </div>
+                <div> 
+                    <h2>
+                    <?php echo $f['park_name'] ?>
+                    </h2>
+                </div>
+                <div class="image-styling">
+                    <?php
+                    $park_img = '';
+                    if ($f['park_img']) {
+                        $park_img = '<img src="'.esc_url(get_media_url( $f['park_img'])).'">';
+                        echo $park_img;
+                    } 
+                    ?>
                 </div>
             <?php } ?>
         <?php } ?>
