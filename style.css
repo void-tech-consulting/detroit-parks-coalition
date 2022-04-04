@@ -142,8 +142,7 @@ select {
   color: var(--text-color);
   font-family: 'magilio';
   font-weight: 400;
-  font-size: 55px; /* change this to dynamic size*/
-
+  font-size: 55px; 
 }
 
 .nav {
@@ -207,15 +206,9 @@ NAVIGATION STYLES
 }
 
 .dpc-nav li a:hover {
-   background-color: #FAC05E;
- 
-
-  border: 25px #FAC05E;
+  background-color: #FAC05E;
+  border-radius: 4px;
 }
-
- /* .dpc-nav li+li {
-  margin-left: 20px;
-}  */
 
 .page-styling{
   background-color: var(--background-main);
@@ -288,10 +281,16 @@ h4 {
 }
 
 .get-involved-container {
+  margin-left: -3rem;
+  margin-right: -3rem;
   margin-top: 1.5rem;
+  margin-bottom: 3rem;
+  background: #DBEFE3;
+}
+
+.get-involved-grid-container{
+  padding: 3rem;
   display: grid;
   gap: 15px;
   grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
-  margin-bottom: 3rem;
 }
-

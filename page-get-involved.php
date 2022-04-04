@@ -9,24 +9,26 @@
         <h4>Donations are received by each park individually</h4>
     </div>
     <div class="get-involved-container">
-    <?php 
-        $get_involved_tiles_data = get_get_involved_tiles_data($get_involved_tiles_setting);
-        if (!empty($get_involved_tiles_data)) {
-            foreach ( $get_involved_tiles_data as $k => $f ) { ?>
-                <div>
-                    <h3>
-                        <?php echo $f['park_name'] ?>
-                    </h3>   
-                    <?php
-                    $park_img = '';
-                    if ($f['park_img']) {
-                        $park_img = '<img class="get-involved-image-styling" src="'.esc_url(get_media_url( $f['park_img'])).'">';
-                        echo $park_img;
-                    } 
-                    ?>
-                </div>
+        <div class="get-involved-grid-container">
+            <?php 
+            $get_involved_tiles_data = get_get_involved_tiles_data($get_involved_tiles_setting);
+            if (!empty($get_involved_tiles_data)) {
+                foreach ( $get_involved_tiles_data as $k => $f ) { ?>
+                    <div>
+                        <h3>
+                            <?php echo $f['park_name'] ?>
+                        </h3>   
+                        <?php
+                        $park_img = '';
+                        if ($f['park_img']) {
+                            $park_img = '<img class="get-involved-image-styling" src="'.esc_url(get_media_url( $f['park_img'])).'">';
+                            echo $park_img;
+                        } 
+                        ?>
+                    </div>
+                <?php } ?>
             <?php } ?>
-        <?php } ?>
+        </div>
     </div>
 
     <div>
