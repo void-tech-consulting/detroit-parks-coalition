@@ -4,7 +4,7 @@ Author: VOID Tech Consulting
 Description: Basic WordPress theme boilerplate
 Version: 1.0
 */
-
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
 /*************************************
   Start reset 
@@ -16,7 +16,7 @@ Version: 1.0
 *::before,
 *::after {
   box-sizing: border-box;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Work Sans', sans-serif;
 }
 
 /* Remove default padding */
@@ -206,136 +206,120 @@ NAVIGATION STYLES
  /* .dpc-nav li+li {
   margin-left: 20px;
 }  */
-
-
 /*About Us Styles 
 */
-.section {
-  background: #E5E5E5;
-}
-.About {
+/* .Section {
+  background:  #E5E5E5;
+  font-family: 'Work Sans', sans-serif;
+} */
+.homePage h1 {
+  color:#93C0A4; 
+  font-size: 5rem;
   text-align:center;
-}
-
-.missions{
-  padding: 2rem; 
-  text-align:center;
-  font-size: 1.4rem;
-line-height: 28px;
-}
-.whoMessage h1{
-  font-size: 4.5rem;
-  margin-top: 5rem;
-  color: #93C0A4;
-  font-style: normal;
-  font-weight: normal;
-
-}
-
-.whoMessage p{
-  font-weight: 600;
-  line-height: 23px;
-  font-size: 1.4rem;
-  margin-top: 1rem;
-  color: #EB9B14;
 }
 .mainImage {
-    align-self: center;
-    margin-top: 3rem;
-    border-radius: 20px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    height: 22.125rem;
-    width: 83.9375rem; 
-    object-fit: cover;
-   
+  align-self: center;
+  background-color: #E5E5E5;
+  border-radius: 20px;
+  display: block;
+  margin-top: 5rem;
+  margin-left: auto;
+  margin-right: auto;
+  height: 22.125rem;
+  width: 83.9375rem; 
+  object-fit: cover;
+} 
+.About {
+  text-align:center;
+  padding-top: 4rem;
+  padding-left: 9rem;
+  padding-right: 9rem;
+  padding-bottom: 5rem;
+  background: white;
+  font-family: 'Work Sans', sans-serif;
 }
-.containers {
-  box-sizing: border-box;
-  /* justify-content: space-between; */
-  justify-content:center;
+.homePage p {
+  font-size: 1.2rem;
+}
+.About h2 {
+  color: orange;
+  font-size: 1.3rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+.Goals {
+  background: #DBEFE3;
+  padding-top: 3rem;
+}
+.Containers {
   display: flex;
-  flex-direction: row;
+  justify-content:space-evenly;
+  padding: 5rem;
+  text-align:center;
+} 
+.Containers img{
+  position:relative;
+  bottom:3rem;
+  left:5.9rem;
 }
-
 .goalsLeftBox {
-  padding:5rem;
+  border: solid 1px #088E16;
+  padding: 5rem;
   width: 24.5rem;
   height: 24rem;
-  margin: 5rem;
-  border: solid 1px #088E16;
-}
-
-.goalsLeftBox img{
-    position:relative;
-    bottom:3rem;
-    left:5.9rem;
-}
-
+} 
 .goalsMiddleBox {
-  padding:5rem;
+  border: solid 1px #088E16;
+  padding: 5rem;
   width: 24.5rem;
   height: 24rem;
-  margin: 5rem;
-  border: solid 1px #088E16;
 }
-
-
-.goalsLeftBoxText {
-  font-weight:500;
-  text-align:center;
-  font-size:1.3rem;
-  margin:auto;
-  padding:0%;
-}
-
-
-.goalsRightBoxText {
-  font-weight:500;
-  text-align:center;
-  font-size:1.3rem;
-  margin:auto;
-  padding:0%;
-}
-
-.goalsMiddleBoxText {
-  font-weight:500;
-  text-align:center;
-  font-size:1.3rem;
-  margin:auto;
-  padding:0%;
-}
-
-.goalsMiddleBox img{
-  position:relative;
-  bottom:3rem;
-  left:5.9rem;
-}
-
 .goalsRightBox {
-  padding:5rem;
+  border: solid 1px #088E16;
+  padding: 5rem;
   width: 24.5rem;
   height: 24rem;
-  margin: 5rem;
-  border: solid 1px #088E16;
-  
 }
 
-.goalsRightBox img {
-  position:relative;
-  bottom:3rem;
-  left:5.9rem;
+/*  Footer style */
+.footer-container {
+  background: #F4CD73;
+  font-family: 'Work Sans', sans-serif;
+  text-align:center;
+  margin-top: 4rem;
+  padding-top: 2rem;
+  flex-direction:column;
+  align-items:center;
 }
-.goals {
-  padding: 4rem;
-  background:#DBEFE3;
-  font-family: 'Work Sans';
-  font-weight: 400;
+.formStyle {
+  text-align:left;
+  padding-left:30rem;
+  padding-right: 30rem;
 }
-.goals h1{
-  margin:auto;
-  font-size: 3rem;
-  color: #93C0A4;
-  text-align: center;
+.footer-container h1 {
+  color: white;
+  padding-bottom: 1rem;
+  font-size: 2.2rem;
 }
+
+/* RESOURCES STYLING  */
+.ResourcesContainer {
+  text-align:center;
+  color:green;
+  justify-content:center;
+  background: #DBEFE3;
+  align-self:center;
+  padding-left: 6rem;
+  padding-right: 6rem;
+  padding-top: 3rem;
+}
+.Calendar {
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+
+}
+/* .Funding h1{
+  text-align:center;
+} */
+
+/* //style="border:solid 1px #777" width="900" height="700" frameborder="0" scrolling="no" */
