@@ -16,8 +16,10 @@ require get_template_directory() . '/inc/section_vars.php';
               </h2>
                 <?php
                 $park_img = '';
+                $park_link = '';
                 if ($f['park_img']) {
-                    $park_img = '<img class="our-parks-image-styling" src="'.esc_url(get_media_url( $f['park_img'])).'">';
+                    $park_img = '<a href="'.esc_url(get_media_url($f['park_link'])).'"><img class="our-parks-image-styling" 
+                    src="'.esc_url(get_media_url( $f['park_img'])).'"></a>';
                     echo $park_img;
                 } 
                 ?>

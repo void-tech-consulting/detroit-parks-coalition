@@ -20,8 +20,10 @@
                         </h3>   
                         <?php
                         $park_img = '';
+                        $park_link = '';
                         if ($f['park_img']) {
-                            $park_img = '<img class="get-involved-image-styling" src="'.esc_url(get_media_url( $f['park_img'])).'">';
+                            $park_img = '<a href="'.esc_url(get_media_url($f['park_link'])).'"><img class="get-involved-image-styling" 
+                            src="'.esc_url(get_media_url( $f['park_img'])).'"></a>';
                             echo $park_img;
                         } 
                         ?>

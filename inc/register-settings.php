@@ -75,7 +75,7 @@ function get_involved_tiles_repeater($wp_customize) {
                     'title' => esc_html__('Park Name'),
                     'type' => 'text',
                   ),
-                  'park_link' => array(
+                  'park_link_get_involved' => array(
                     'title' => esc_html__('Link to Park Website'),
                     'type' => 'text',
                   ),
